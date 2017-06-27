@@ -1,0 +1,14 @@
+[ignore]
+.*/node_modules/.*
+.*/test/.*
+.*/build/.*
+.*/config/.*
+[include]
+.*/src
+[libs]
+flow-typed
+./custom-flow-declaration.js
+[options]
+module.file_ext=.vue
+module.file_ext=.js
+module.file_ext=.scss
