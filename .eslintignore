@@ -1,0 +1,5 @@
+build/*.js
+config/*.js
+flow-typed/**/*.js
+test/**/*.js
+node_modules/*.js
