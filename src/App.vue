@@ -1,15 +1,18 @@
 <template>
     <div id="app">
         <flow-one></flow-one>
+        <hr>
+        <flow-two></flow-two>
     </div>
 </template>
 
 <script>
     import FlowOne from './components/flow-one.vue';
+    import FlowTwo from './components/flow-two.vue';
 
     export default {
         name: 'app',
-        components: { FlowOne },
+        components: { FlowOne, FlowTwo },
         data () {
             return {
                 msg: 'Welcome to Your Vue.js App'
