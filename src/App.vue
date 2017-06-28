@@ -3,16 +3,19 @@
         <flow-one></flow-one>
         <hr>
         <flow-two></flow-two>
+        <hr>
+        <flow-three></flow-three>
     </div>
 </template>
 
 <script>
     import FlowOne from './components/flow-one.vue';
     import FlowTwo from './components/flow-two.vue';
+    import FlowThree from './components/flow-three.vue';
 
     export default {
         name: 'app',
-        components: { FlowOne, FlowTwo },
+        components: { FlowOne, FlowTwo, FlowThree },
         data () {
             return {
                 msg: 'Welcome to Your Vue.js App'
