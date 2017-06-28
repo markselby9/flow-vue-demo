@@ -8,8 +8,7 @@
         </select>
         <span>Selected: {{ selected }}</span>
         <div></div>
-        <button @click="silly(selected)">silly!</button>
-        <button @click="clever()">clever!</button>
+        <button @click="useLodash">Use flow with lodash library?</button>
         <div>Output: {{output}}</div>
     </div>
 </template>

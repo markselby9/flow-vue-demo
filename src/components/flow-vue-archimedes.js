@@ -1,5 +1,6 @@
-/* eslint-disable no-undef */
+/* eslint-disable no-undef,no-console */
 // @flow
+import * as _ from 'lodash';
 
 const values: Array<number> = [1, 2, 3];
 
@@ -26,20 +27,14 @@ export default {
         };
     },
     methods: {
-        silly(input: number): string {
-            this.output = handle(`input:${input}`);
-            return 123;
-            // Vue's method doesn't always need a method, so it's not a best place to use flow
-        },
-        clever() {
-            debugger;
-            if (typeof this.selected !== 'number') {
-                console.warn('expect a number to be selected!');
-                return;
-            }
-            // console.assert(typeof this.selected === 'number', 'input is a number');
-            // manually assert type?
-            this.output = handle(this.selected);
+        useLodash() {
+            console.log('using lodash');
+            const array1: Array<number> = [1, 2, 3];
+            const array2: Array<number> = [4, 5, 6];
+            const mergedArrayWrong: Array<number> = _.merge(array1, array2);  //wrong type!
+            const concatArray: Array<number> = _.concat(array1, array2);
+            console.log('mergedArrayWrong', mergedArrayWrong);
+            console.log('concatArray', concatArray);
         },
     },
 };
