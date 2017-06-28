@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /**
  * Created by markfeng on 2017/5/31.
  */

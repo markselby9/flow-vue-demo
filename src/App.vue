@@ -1,10 +1,11 @@
 <template>
     <div id="app">
-        <flow-one></flow-one>
-        <hr>
-        <flow-two></flow-two>
-        <hr>
-        <flow-three></flow-three>
+        <!--<flow-one></flow-one>-->
+        <!--<hr>-->
+        <!--<flow-two></flow-two>-->
+        <!--<hr>-->
+        <!--<flow-three></flow-three>-->
+        <sample></sample>
     </div>
 </template>
 
@@ -12,10 +13,11 @@
     import FlowOne from './components/flow-one.vue';
     import FlowTwo from './components/flow-two.vue';
     import FlowThree from './components/flow-three.vue';
+    import Sample from './components/flow-vue-archimedes.vue';
 
     export default {
         name: 'app',
-        components: { FlowOne, FlowTwo, FlowThree },
+        components: { Sample },
         data () {
             return {
                 msg: 'Welcome to Your Vue.js App'
