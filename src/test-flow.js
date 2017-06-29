@@ -6,9 +6,19 @@
 //
 // doSomethingStupid('I\'m stringy');
 
-const isAString: string = 'I am a string!';
+// example1
 const foobar = (str: string): number => {
     const foo = str * 2;
     return '233';
 };
-foobar(isAString);
+foobar('I am a string!');
+
+// example2
+function aaa(x: ?number): string {
+    // ?number would mean number, null, or undefined.
+    if (x) {
+        return x;
+    }
+    return "default string";
+}
+
